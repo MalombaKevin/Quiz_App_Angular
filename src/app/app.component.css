@@ -1,5 +1,5 @@
 :root {
-    background-color: #100f4d;
+    background-color: #020529;
     font-size: 62.5%;
   }
   
@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     color: rgb(41, 4, 4);
+    background-color: #020529;
   }
   
   h1,
@@ -84,10 +85,10 @@
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #56a5eb;
+    border: 0.1rem solid #b1c1cf;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #56a5eb;
+    color: #FFF;
     background-color: rgb(42, 156, 53);
   }
   
@@ -98,8 +99,3 @@
     transition: transform 150ms;
   }
   
-  .btn[disabled]:hover {
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-  }
