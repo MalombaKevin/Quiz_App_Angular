@@ -8,46 +8,48 @@
 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
   <div class="container">
     <div id="home" class="flex-center flex-column">
-      <h1>QUIZ APP</h1>
+      <h1>QUIZ WEB APP</h1>
       <a href="" class="btn">START QUIZ</a>
       <a href="" class="btn">HIGH SCORES</a>
+    </div>
+    <div class="info_box">
+      <div class="info_title">
+        <span>Some rules of this Quiz</span>
+      </div>
+      <div class="info_list">
+        <div class="info">1. You will have <span>10 seconds</span>for each question</div>
+        <div class="info">2. once you select your answer, you can't reselect</div>
+        <div class="info">3. You can't select any option once time goes off</div>
+        <div class="info">4. You can't exit from the quiz while you're playing</div>
+        <div class="info">5. You will get points on the basis of your correct answers.</div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">continue</button>
+      </div>
+    </div>
+    <!-- Quiz box -->
+    <div class="quiz_box">
+      <header>
+        <div class="time">Awesome quiz application</div>
+        <div class="timer">
+          <div class="time_text">Time left</div>
+          <div class="timer_sec">15</div>
+        </div>
+      </header>
+      <section>
+        <div class="que_text">
+          <span>What is a controller in MVC</span>
+        </div>
+        <div class="option_list">
+          <div class="option">
+            <span>software Code that stores the data</span>
+            <div class="icon"><i class="fas fa-check"></i></div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </body>
