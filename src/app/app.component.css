@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     color: rgb(227, 225, 225);
-    background-color: #030725;
+    background-color: #252c65;
   }
   
   h1,
@@ -155,6 +155,7 @@
     color: #007bff;
   }
  .quiz_box{
+  display: none;
   width: 550px;
   background: #ffff;
   border-radius: 5px;
@@ -259,6 +260,7 @@ section .option_list .option:hover{
 .option_list .option .icon.tick{
   color: #23903c;
   border-color: #23903c;
+  background: #d4edda;
 }
 
 .option_list .option .icon.tick{
@@ -266,3 +268,102 @@ section .option_list .option:hover{
   border-color: #23903c;
 }
 
+.option_list .option .icon.cross{
+  color: #a42834;
+  background: #f8d7da;
+  border-color: #a42834;
+}
+
+.quiz_box footer{
+  height: 60px;
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quiz_box footer .total_que span{
+  display: flex;
+  user-select: none;
+}
+
+footer .total_que span p{
+  font-weight: 500;
+  padding: 0 5px;
+}
+
+.total_que span p:first-child{
+  padding-left: 0px;
+}
+
+footer .next_btn{
+  height: 40px;
+  padding: 0 13px;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #007bff;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+footer .next_btn:hover{
+  background: #0263ca;
+}
+
+/* result box */
+.result_box{
+  background: #fff;
+  width: 450px;
+  padding: 25px 30px;
+  border-radius: 5px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.result_box .icon{
+  font-size: 100px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.result_box .complete_text{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.result_box .score_text span{
+  display: flex;
+}
+
+.score_text span p{
+  font-weight: 600;
+  padding: 0 4px;
+}
+
+.result_box .buttons{
+  display: flex;
+  margin: 20px 0;
+}
+
+.result_box .buttons button{
+  margin: 0 10px;
+  height: 45px;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
