@@ -10,8 +10,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
-import { CookieService } from 'ngx-cookie-service';
-import { RegisterComponent } from './authc/register/register.component';
+import { CookieService } from 'ngx-cookie-service'
 import { AuthService } from './services/auth.service';
 import { EndpointsService } from './services/endpoints.service';
 
@@ -19,11 +18,10 @@ import { EndpointsService } from './services/endpoints.service';
 @NgModule({
   declarations: [
     AppComponent,
-
     LoginComponent,
     SignupComponent,
     ProfileComponent,
-    RegisterComponent
+    
   ],
   imports: [
     BrowserModule,
