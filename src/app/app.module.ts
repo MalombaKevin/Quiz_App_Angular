@@ -19,6 +19,9 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CookieService } from 'ngx-cookie-service';
 import { RegisterComponent } from './authc/register/register.component';
+import { AuthGuardService } from './guards/auth-guard.service';
+import { AuthService } from './services/auth.service';
+import { EndpointsService } from './services/endpoints.service';
 
 
 @NgModule({
@@ -43,7 +46,7 @@ import { RegisterComponent } from './authc/register/register.component';
 
   providers: [CookieService,
     CookieService,
-
+    AuthGuardService,
     AuthService,
     EndpointsService,
     GlobalService,
