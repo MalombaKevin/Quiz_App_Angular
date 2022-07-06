@@ -3,24 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { ResultComponent } from './result/result.component';
-import { QuizComponent } from './quiz/quiz.component';
-import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './auth/login/login.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { ProfileComponent } from './profile/profile.component';
+import { CookieService } from 'ngx-cookie-service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    ResultComponent,
-    QuizComponent,
-    RegisterComponent
+    LoginComponent,
+    SignupComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
