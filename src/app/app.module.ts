@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { EndpointsService } from './service/endpoints.service';
 import { AuthService } from 'src/app/service/auth.service';
-import { UnAuthGuardService } from './guards/unauth-guard.service';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { AuthComponent } from './auth/.component';
+
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -34,17 +34,16 @@ import { CookieService } from 'ngx-cookie-service';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [
+ 
+
+
+  providers: [CookieService,
     CookieService,
-    AuthGuardService,
-    UnAuthGuardService,
+
     AuthService,
     EndpointsService,
     GlobalService,
   ],
-
-
-  providers: [CookieService],
 
   bootstrap: [AppComponent]
 })
