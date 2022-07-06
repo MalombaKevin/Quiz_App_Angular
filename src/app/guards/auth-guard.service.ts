@@ -1,20 +1,20 @@
-// import { Injectable } from '@angular/core';
-// import { Router, CanActivate } from '@angular/router';
-// import { GlobalService } from '../services/global.service';
+import { Injectable } from '@angular/core';
+import { Router, CanActivate } from '@angular/router';
+import { AuthService } from 'app/services/auth.service';
 
-// @Injectable()
-// export class AuthGuardService implements CanActivate {
-//   constructor(
-//       private globalService: GlobalService,
-//       private router: Router
-//     ) {}
+@Injectable()
+export class AuthGuardService implements CanActivate {
+  constructor(
+      private auth: AuthService,
+      private router: Router
+    ) {}
 
-//   canActivate(): boolean {
-//     if (!this.globalService.isAuthenticated()) {
-//       this.router.navigate(['auth']);
-//       return false;
-//     }
+  canActivate(): boolean {
+    if (!this.auth['isLoggedIn']()) {
+      this.router.navigate(['']);
+      return false;
+    }
 
-//     return true;
-//   }
-// }
+    return true;
+  }
+}
