@@ -1,7 +1,7 @@
-import { GeneralService } from './services/general.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
-import { CookieService } from 'ngx-cookie-service'
+import { CookieService } from 'ngx-cookie-service';
 import { AuthService } from './services/auth.service';
 import { EndpointsService } from './services/endpoints.service';
 
@@ -23,6 +23,7 @@ import { EndpointsService } from './services/endpoints.service';
     ProfileComponent,
     
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -36,10 +37,8 @@ import { EndpointsService } from './services/endpoints.service';
 
   providers: [CookieService,
     CookieService,
-
     AuthService,
     EndpointsService,
-    GeneralService,
   ],
 
   bootstrap: [AppComponent]
