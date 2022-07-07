@@ -9,37 +9,38 @@ import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CookieService } from 'ngx-cookie-service';
-import { RegisterComponent } from './authc/register/register.component';
 import { QuizDetailComponent } from './quiz-detail/quiz-detail.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { AuthService } from './services/auth.service';
+import { EndpointsService } from './services/endpoints.service';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    QuizComponent,
     LoginComponent,
     SignupComponent,
     ProfileComponent,
-    RegisterComponent,
-    QuizDetailComponent
+    HomeComponent,
+
+    
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule
-
   ],
- 
-
-
   providers: [
     CookieService,
-
-   
+    AuthService,
+    EndpointsService,
   ],
+
+
 
   bootstrap: [AppComponent]
 })
