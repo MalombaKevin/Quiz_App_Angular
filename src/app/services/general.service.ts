@@ -45,6 +45,10 @@ export class GeneralService {
     getToken() {
       return this.cookie.get('ATN');
     }
+
+    delToken(){
+    this.cookie.delete('ATN')
+    }
   
   }
 
