@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
+import { GeneralService } from 'src/app/services/general.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -8,8 +10,13 @@ import { FormGroup } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   loginform:any
+  username = new FormControl('');
+  password = new FormControl('');
 
-  constructor() {
+  constructor(
+    private auths:AuthService,
+    private gen:GeneralService 
+  ) {
     
    }
 
@@ -17,6 +24,14 @@ export class LoginComponent implements OnInit {
   }
 
   logprocess(){
+    const body = {
+      username: this.username.value,
+      password: this.password.value
+    };
+    console.log(body)
+    this.auths.log(body).subscribe((res)=>{
+      console.log(res)
+    })
     
   }
 
