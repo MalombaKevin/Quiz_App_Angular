@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "@angular/core": "^14.0.4"
+    "@angular/core": "^14.0.4",
+    "ngx-cookie-service": "^14.0.1"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.0.5"
   }
 }
