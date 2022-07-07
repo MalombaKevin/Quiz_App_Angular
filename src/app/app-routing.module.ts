@@ -9,7 +9,7 @@ const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'register',component:SignupComponent},
   {path:'home',component:HomeComponent,canActivate:[AuthGuardService]},
-  {path:'profile',component:ProfileComponent},
+  {path:'profile',component:ProfileComponent,canActivate:[AuthGuardService]},
   {path:'login',component:LoginComponent}
 ];
 
