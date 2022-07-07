@@ -13,6 +13,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { CookieService } from 'ngx-cookie-service';
 import { AuthService } from './services/auth.service';
 import { EndpointsService } from './services/endpoints.service';
+import { AuthGuardService } from './guards/auth-guard.service';
 import { HomeComponent } from './home/home.component';
 
 
@@ -34,10 +35,12 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     ReactiveFormsModule
   ],
+
   providers: [
     CookieService,
     AuthService,
     EndpointsService,
+    AuthGuardService,
   ],
 
 

@@ -6,6 +6,7 @@ import { GeneralService } from './general.service';
   providedIn: 'root'
 })
 export class AuthService {
+  [x: string]: any;
 
   constructor(
     private http: HttpClient,
