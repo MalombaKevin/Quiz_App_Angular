@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { FormGroup,FormControl } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'app/services/auth.service';
@@ -14,7 +15,8 @@ signform:any
 tok:any
   constructor(
     private auths:AuthService,
-    private gen:GeneralService
+    private gen:GeneralService,
+    private router:Router
   ) {
   
     
@@ -42,6 +44,7 @@ this.signform=new FormGroup({
     console.log(body)
     this.auths.reg(body).subscribe((res:any)=>{
     this.gen.setToken(res.token)
+    this.router.navigate([''])
       
     
     
