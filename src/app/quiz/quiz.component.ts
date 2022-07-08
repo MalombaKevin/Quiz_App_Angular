@@ -8,13 +8,16 @@ import { QuizService } from '../services/quiz.service';
 })
 export class QuizComponent implements OnInit {
   quizzes: any;
+  avail=false
 
   constructor(private quizService: QuizService) 
   {
     this.quizService.getQuizzes().subscribe((data:any)=>
        {
       console.log(data);
-      if(data){this.quizzes = data;}
+      if(data){this.quizzes = data;
+      this.avail=true
+      }
         
        }
        );
