@@ -1,4 +1,13 @@
-<div class="mx-auto w-50 mt-5">
+ <div class="">
+  <div>
+    <div class="routes d-flex justify content center w-50 mx-auto mt-5">
+      <div class="p-5 text-light w-100 text-center log" style="background-color:#093179; border-right: 1px solid black;"(click)="lgr()">Login</div>
+      <div class="p-5 text-light w-100 text-center log" style="background-color: #093179;" (click)="snr()">Signup</div>
+
+  </div>
+  </div>
+  <div class="mx-auto w-50 mt-4 shadow p-1">
+    <h5 class="text-center">Login here</h5>
     <form  >
         <!-- Email input -->
         <div class="form-outline mb-4">
@@ -29,6 +38,7 @@
         </div>
       
         <!-- Submit button -->
-        <button type="submit" class="btn btn-primary btn-block" (click)="logprocess()">Sign in</button>
+        <button type="submit" class="btn  btn-block w-100 text-light fs-4 " (click)="logprocess()" style="background-color: #093179;">Sign in</button>
       </form>
+    </div>
 </div>

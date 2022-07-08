@@ -1,5 +1,5 @@
 import { Router } from '@angular/router';
-import { FormGroup,FormControl } from '@angular/forms';
+import { FormGroup,FormControl,Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'app/services/auth.service';
 import { GeneralService } from 'app/services/general.service';
@@ -25,10 +25,10 @@ tok:any
   ngOnInit(): void {
 
 this.signform=new FormGroup({
-  'name':new FormControl(),
-  'username':new FormControl(),
-  'email':new FormControl(),
-  'password':new FormControl()
+  'name':new FormControl('',[Validators.required]),
+  'username':new FormControl('',[Validators.required]),
+  'email':new FormControl('',[Validators.required]),
+  'password':new FormControl('',[Validators.required])
 })
 
   }
@@ -50,6 +50,17 @@ this.signform=new FormGroup({
     
        
     })
+
+  }
+
+  snr(){
+    this.router.navigate(['register'])
+
+  }
+
+  lgr(){
+    this.router.navigate(['login'])
+
 
   }
 

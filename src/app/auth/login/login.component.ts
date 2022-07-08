@@ -39,4 +39,15 @@ export class LoginComponent implements OnInit {
     
   }
 
+  snr(){
+    this.router.navigate(['register'])
+
+  }
+
+  lgr(){
+    this.router.navigate(['login'])
+
+
+  }
+
 }

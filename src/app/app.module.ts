@@ -15,6 +15,7 @@ import { AuthService } from './services/auth.service';
 import { EndpointsService } from './services/endpoints.service';
 import { AuthGuardService } from './guards/auth-guard.service';
 import { HomeComponent } from './home/home.component';
+import { LogoutComponent } from './auth/logout/logout.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { HomeComponent } from './home/home.component';
     SignupComponent,
     ProfileComponent,
     HomeComponent,
+    LogoutComponent,
 
     
   ],
