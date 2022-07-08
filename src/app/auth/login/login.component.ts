@@ -1,5 +1,8 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
+import { GeneralService } from 'app/services/general.service';
+import { AuthService } from 'app/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -8,8 +11,14 @@ import { FormGroup } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   loginform:any
+  username = new FormControl('');
+  password = new FormControl('');
 
-  constructor() {
+  constructor(
+    private auths:AuthService,
+    private gen:GeneralService,
+    private router:Router 
+  ) {
     
    }
 
@@ -17,7 +26,28 @@ export class LoginComponent implements OnInit {
   }
 
   logprocess(){
+    const body = {
+      username: this.username.value,
+      password: this.password.value
+    };
+    console.log(body)
+    this.auths.log(body).subscribe((res:any)=>{
+      this.gen.setToken(res.token)
+      this.router.navigate([''])
+      console.log(res)
+    })
     
+  }
+
+  snr(){
+    this.router.navigate(['register'])
+
+  }
+
+  lgr(){
+    this.router.navigate(['login'])
+
+
   }
 
 }

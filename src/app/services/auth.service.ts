@@ -6,7 +6,7 @@ import { GeneralService } from './general.service';
   providedIn: 'root'
 })
 export class AuthService {
-  [x: string]: any;
+  
 
   constructor(
     private http: HttpClient,
@@ -14,11 +14,11 @@ export class AuthService {
     private genService: GeneralService
   ) { }
 
-  register(body:object) {
+  reg(body:object) {
     return this.http.post(this.endpoints.register(), body, {headers: this.genService.setheaders()});
   }
 
-  login(body:object) {
+  log(body:object) {
     return this.http.post(this.endpoints.login(), body, {headers: this.genService.setheaders()});
   }
 }
