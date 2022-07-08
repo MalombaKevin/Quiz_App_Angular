@@ -9,7 +9,7 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class GeneralService {
 
-  hostUrl='http://quizapm.herokuapp.com/';
+  hostUrl='https://quizapm.herokuapp.com/';
   headers:any
 
   constructor(private cookie:CookieService) { 
