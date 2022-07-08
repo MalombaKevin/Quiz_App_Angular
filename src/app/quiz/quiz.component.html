@@ -1,5 +1,8 @@
-<div *ngFor="let quiz of quizzes">  
-   <p>{{quiz.name}}</p> 
-   <img src="{{quiz.image}}" alt="{{quiz.name}}"/>
-   <p>{{quiz.description}}</p>
+
+<div *ngIf="quizzes">
+   <div *ngFor="let quiz of quizzes">  
+      <p>{{quiz.name}}</p> 
+      <img src="{{quiz.image}}" alt="{{quiz.name}}"/>
+      <p>{{quiz.description}}</p>
+   </div>
 </div>
