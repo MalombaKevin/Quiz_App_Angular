@@ -99,6 +99,7 @@
     transition: transform 150ms;
   }
   .info_box{
+    display: none;
     width: 540px;
     background: #fff;
     border-radius: 5px;
