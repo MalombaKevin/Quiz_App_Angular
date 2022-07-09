@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AuthGuardService } from './guards/auth-guard.service';
 import { QuizComponent } from './quiz/quiz.component';
+import { LogoutComponent } from './auth/logout/logout.component';
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'register',component:SignupComponent},

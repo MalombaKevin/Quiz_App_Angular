@@ -18,6 +18,7 @@ import { AuthGuardService } from './guards/auth-guard.service';
 import { HomeComponent } from './home/home.component';
 import { LogoutComponent } from './auth/logout/logout.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { QuizComponent } from './quiz/quiz.component';
     ProfileComponent,
     HomeComponent,
     LogoutComponent,
-    QuizComponent
+    QuizComponent,
+    NavbarComponent
 
 
     
