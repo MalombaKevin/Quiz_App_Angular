@@ -14,7 +14,7 @@ const routes: Routes = [
   {path:'home',component:HomeComponent,canActivate:[AuthGuardService]},
   {path:'profile',component:ProfileComponent,canActivate:[AuthGuardService]},
   {path:'login',component:LoginComponent},
-  {path:'quiz',component:QuizComponent,canActivate:[AuthGuardService]}
+  {path:'quizlist',component:QuizComponent,canActivate:[AuthGuardService]}
 ];
 
 
