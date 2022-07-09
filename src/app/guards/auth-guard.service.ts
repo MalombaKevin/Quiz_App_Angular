@@ -6,12 +6,12 @@ import { GeneralService } from 'app/services/general.service';
 @Injectable()
 export class AuthGuardService implements CanActivate {
   constructor(
-      private auth: GeneralService,
+      private gen: GeneralService,
       private router: Router
     ) {}
 
   canActivate(): boolean {
-    if (!this.auth.isAuthenticated() ){
+    if (!this.gen.isAuthenticated() ){
       this.router.navigate(['login']);
       return false;
     }

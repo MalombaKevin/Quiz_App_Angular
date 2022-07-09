@@ -28,7 +28,7 @@ import { QuizComponent } from './quiz/quiz.component';
     ProfileComponent,
     HomeComponent,
     LogoutComponent,
-    QuizComponent
+    QuizComponent,
 
 
     
