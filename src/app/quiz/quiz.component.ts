@@ -7,8 +7,7 @@ import { QuizService } from '../services/quiz.service';
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
-  quizzes: any;
-  avail=false
+  quizzes:any
 
   constructor(private quizService: QuizService) 
   {
@@ -16,7 +15,7 @@ export class QuizComponent implements OnInit {
        {
       console.log(data);
       if(data){this.quizzes = data;
-      this.avail=true
+      
       }
         
        }

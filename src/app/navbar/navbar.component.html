@@ -1,10 +1,63 @@
-<nav class="blue-grey">
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo center">Quiz</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li>
-          <a  href="">Signout</a>
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color:#252c65; font-size: x-large;">
+  <div class="container">
+    <a class="navbar-brand me-auto" href="/home" title="Home"><span style="color:gold;font-size:x-large"><i
+          class="fa-solid fa-brain"></i></span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item active">
+
+        </li>
+
+
+
+      </ul>
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="text-decoration:none; color:white"> Moringa School </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="https://moringaschool.instructure.com/login/canvas" style="text-decoration:none; color:blue" target="_blank">LMS</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://moringaschool.com/" style="text-decoration:none; color:purple; border:none;" target="_blank">Website</a>
+
+          </ul>
+        </li>
+
+
+
+      </ul>
+
+
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false" style="text-decoration:none; color:GOLD"> Profile </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="/profile" style="text-decoration:none; color:blue">Profile</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/quiz" style="text-decoration:none; color:purple; border:none;">Quizzes</a>
+
+            </li>
+            <app-logout></app-logout>
+          </ul>
         </li>
       </ul>
+
+
+
     </div>
-  </nav>
+  </div>
+</nav>

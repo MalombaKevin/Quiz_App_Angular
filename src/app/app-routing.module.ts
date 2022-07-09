@@ -6,15 +6,15 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AuthGuardService } from './guards/auth-guard.service';
 import { QuizComponent } from './quiz/quiz.component';
-
+import { LogoutComponent } from './auth/logout/logout.component';
+import { UnAuthGuardService } from './guards/unauth-guard.services';
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'register',component:SignupComponent},
-  {path:'quizlist',component:QuizComponent,canActivate:[AuthGuardService]},
   {path:'home',component:HomeComponent,canActivate:[AuthGuardService]},
   {path:'profile',component:ProfileComponent,canActivate:[AuthGuardService]},
   {path:'login',component:LoginComponent},
-  
+  {path:'quizlist',component:QuizComponent,canActivate:[AuthGuardService]}
 ];
 
 
