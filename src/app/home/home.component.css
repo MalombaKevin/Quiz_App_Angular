@@ -89,9 +89,10 @@
     text-align: center;
     border: 0.1rem solid #b1c1cf;
     margin-bottom: 1rem;
+    margin-top: 29px;
     text-decoration: none;
     color: #FFF;
-    background-color: rgb(42, 156, 53);
+    background-color: #b89e0f;
     text-align: center;
     justify-content: center;
   }
@@ -122,7 +123,7 @@
   }
   .info_box .info_list .info{
     margin: 5px 0;
-    font-size: 28px;
+    font-size: 58px;
   }
   .info_box .info_list .info_span{
     font-weight: 600;
