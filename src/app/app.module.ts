@@ -19,6 +19,10 @@ import { HomeComponent } from './home/home.component';
 import { LogoutComponent } from './auth/logout/logout.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { QuizDetailComponent } from './quiz/quiz-detail/quiz-detail/quiz-detail.component';
+import { QuestionComponent } from './quiz/quiz-detail/quiz-detail/question/question.component';
+import { AnswerComponent } from './quiz/quiz-detail/quiz-detail/question/answer/answer.component';
+
 
 
 @NgModule({
@@ -31,7 +35,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     LogoutComponent,
     QuizComponent,
     NavbarComponent,
-
+    QuizDetailComponent,
+    QuestionComponent,
+    AnswerComponent,
+    
 
     
   ],

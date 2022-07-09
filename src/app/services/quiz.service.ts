@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { GeneralService } from './general.service';
 import { EndpointsService } from './endpoints.service';
 import { HttpClient } from '@angular/common/http';
+import {  Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -16,7 +18,7 @@ export class QuizService {
   ) { }
 
 
-  getQuizzes() {
+  getQuizzes():Observable<object> {
     return this.http.get(this.endpoints.quizzes(), {headers: this.genService.setheaders()});
   }
 

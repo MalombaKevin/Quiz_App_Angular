@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { QuizService } from '../services/quiz.service';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
-  quizzes:any
+  quizzes:Array<any> | undefined;
 
-  constructor(private quizService: QuizService) 
+  constructor(private quizService: QuizService,private router:Router) 
   {
     this.quizService.getQuizzes().subscribe((data:any)=>
        {
@@ -26,6 +26,11 @@ export class QuizComponent implements OnInit {
 
 
   ngOnInit(): void {
+  }
+  detal(slug:string){
+
+this.router.navigate(['quizlist',slug])
+
   }
 
 }
