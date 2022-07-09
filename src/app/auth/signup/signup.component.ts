@@ -44,6 +44,7 @@ this.signform=new FormGroup({
     console.log(body)
     this.auths.reg(body).subscribe((res:any)=>{
     this.gen.setToken(res.token)
+
     this.router.navigate([''])
       
     

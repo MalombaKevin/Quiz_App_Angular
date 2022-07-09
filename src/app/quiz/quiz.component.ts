@@ -7,7 +7,7 @@ import { QuizService } from '../services/quiz.service';
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
-  quizzes: any;
+  quizzes:any
 
   constructor(private quizService: QuizService) 
   {
