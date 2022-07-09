@@ -1,1 +1,4 @@
-<p>answer works!</p>
+<div class="answer" [class.selected]="isSelected()" (click)="callParent(answer.id)">
+    <div class="letter" [class.selected-letter]="isSelected()">{{letter}}</div>
+    <div>{{answer.label}}</div>
+</div>
