@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { GeneralService } from 'app/services/general.service';
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private auths:AuthService,
-    private gen:GeneralService 
+    private gen:GeneralService,
+    private router:Router 
   ) {
     
    }
@@ -29,10 +31,23 @@ export class LoginComponent implements OnInit {
       password: this.password.value
     };
     console.log(body)
-    this.auths.log(body).subscribe((res)=>{
+    this.auths.log(body).subscribe((res:any)=>{
+      this.gen.setToken(res.token)
+      this.router.navigate([''])
       console.log(res)
     })
     
+  }
+
+  snr(){
+    this.router.navigate(['register'])
+
+  }
+
+  lgr(){
+    this.router.navigate(['login'])
+
+
   }
 
 }

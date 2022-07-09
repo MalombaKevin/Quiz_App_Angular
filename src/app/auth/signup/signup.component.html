@@ -2,22 +2,27 @@
 <div style="">
     <div>
         <div class="routes d-flex justify content center w-50 mx-auto mt-5">
-            <div style="background-color: grey; border-right: 1px solid black;">Login</div>
-            <div style="background-color: grey;">Signup</div>
+            <div class="p-5 text-light w-100 text-center log" style="background-color:#093179; border-right: 1px solid black;"(click)="lgr()">Login</div>
+            <div class="p-5 text-light w-100 text-center log" style="background-color: #093179;" (click)="snr()">Signup</div>
 
         </div>
     </div>
-    <div class="mx-auto w-50 mt-2">
+    <div class="mx-auto w-50 mt-2 shadow p-1">
+      <h5 class="text-center my-2">Register</h5>
         <form [formGroup]="signform">
             <!-- 2 column grid layout with text inputs for the first and last names -->
             <div class="row mb-4">
               <div class="col">
+                <span class="text-danger " *ngIf="signform.get('name').hasError('required') && signform.get('name').touched "> <span>&#8505;
+                </span> Username field is required</span>
                 <div class="form-outline">
                   <input type="text" id="form3Example1" class="form-control"  formControlName="name" name="name"/>
                   <label class="form-label" for="form3Example1">Name</label>
                 </div>
               </div>
               <div class="col">
+                <span class="text-danger " *ngIf="signform.get('email').hasError('required') && signform.get('email').touched "> <span>&#8505;
+                </span> You must provide email</span>
                 <div class="form-outline">
                   <input type="email" id="form3Example2" class="form-control" formControlName="email"  name="email"/>
                   <label class="form-label" for="form3Example2">email</label>
@@ -27,6 +32,8 @@
           
             <!-- Email input -->
             <div class="form-outline mb-4">
+              <span class="text-danger " *ngIf="signform.get('username').hasError('required') && signform.get('username').touched "> <span>&#8505;
+              </span> Username field is required</span>
               <input type="text" id="form3Example3" class="form-control" formControlName="username" name="username" />
               <label class="form-label" for="form3Example3">Username</label>
             </div>
@@ -35,6 +42,8 @@
             <div class="form-outline mb-4">
               <input type="password" id="form3Example4" class="form-control" formControlName="password" name="password"/>
               <label class="form-label" for="form3Example4">Password</label>
+              <span class="text-danger " *ngIf="signform.get('password').hasError('required') && signform.get('password').touched "> <span>&#8505;
+              </span> Password is missing</span>
             </div>
           
             <!-- Checkbox -->
@@ -46,7 +55,7 @@
             </div>
           
             <!-- Submit button -->
-            <button type="submit" class="btn btn-primary btn-block mb-4 w-0 mx-auto" (click)="signprocess()" >Sign up</button>
+            <button type="submit" class="btn btn-primary btn-block mb-4 w-0 mx-auto w-100" (click)="signprocess()"  [disabled]="!signform.valid">Sign up</button>
           
             <!-- Register buttons -->
             <div class="text-center">
