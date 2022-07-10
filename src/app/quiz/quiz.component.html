@@ -1,31 +1,21 @@
 
-<!-- <div *ngIf="quizzes != null" class="quizzes-container"> -->
-    <h2>All Quizzes</h2>
-    <div *ngFor="let quiz of quizzes" class="quiz-item">
-        <div class="quiz-image">
-            <img src={{quiz.image}} alt="" width="100%"/>
-        </div>
-        <div>
-            <div>
-                <h2>{{quiz.name}}</h2>
-            </div>
-            <div>
-                <p>{{quiz.description}}</p>
-            </div>
-            <div class="actions">
-                <span>{{quiz.questions_count}} Questions</span>
-                <!-- <a [routerLink]="['/quizzes', quiz.slug]">
-                    <button class="start-quiz-button">Start</button>
-                </a> -->
-            </div>
-        </div>
-    </div>
-<!-- </div> -->
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+<div class="container-fluid mt-3" align="center">
+   <div class="row">
+   
+         <div class="col-md-2" *ngFor="let quiz of quizzes">
+
+            <div class="card" style="width: 18rem;"align="center">
+               <img src="https://wallpapercave.com/wp/wp5722053.png"
+                   class="card-img-top" alt="...">
+               <div class="card-body">
+                   <h5 class="card-title">{{quiz.name}}</h5>
+                   <p class="card-text">{{quiz.description}}</p>
+                   <a href="#" class="btn btn-primary">Start Quiz</a>
+               </div>
+           </div> <br>
+
+   
+
+   </div>
+
+   

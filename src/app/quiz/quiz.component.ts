@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { QuizService } from './../services/quiz.service';
+import { QuizService } from '../services/quiz.service';
 
 @Component({
   selector: 'app-quiz',
@@ -7,8 +7,21 @@ import { QuizService } from './../services/quiz.service';
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
-  quizzes: any
-  constructor( private quizService: QuizService) { }
+  quizzes: any;
+
+  constructor(private quizService: QuizService) 
+  {
+    this.quizService.getQuizzes().subscribe((data:any)=>
+       {
+      console.log(data);
+      if(data){this.quizzes = data;}
+        
+       }
+       );
+
+  
+  }
+
 
   ngOnInit(): void {
     this.quizService.getQuizzes().subscribe((res) => {

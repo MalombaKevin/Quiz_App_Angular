@@ -4,6 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import {CommonModule} from '@angular/common';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
@@ -17,6 +19,8 @@ import { AuthGuardService } from './guards/auth-guard.service';
 import { HomeComponent } from './home/home.component';
 import { LogoutComponent } from './auth/logout/logout.component';
 
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -26,6 +30,9 @@ import { LogoutComponent } from './auth/logout/logout.component';
     ProfileComponent,
     HomeComponent,
     LogoutComponent,
+    QuizComponent,
+    NavbarComponent
+
 
     
   ],
@@ -35,7 +42,8 @@ import { LogoutComponent } from './auth/logout/logout.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CommonModule
   ],
 
   providers: [
