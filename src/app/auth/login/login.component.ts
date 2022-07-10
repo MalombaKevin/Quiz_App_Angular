@@ -33,8 +33,9 @@ export class LoginComponent implements OnInit {
     console.log(body)
     this.auths.log(body).subscribe((res:any)=>{
       this.gen.setToken(res.token)
+      console.log(res.token)
       this.router.navigate([''])
-      console.log(res)
+     
     })
     
   }
