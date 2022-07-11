@@ -21,9 +21,9 @@ import { LogoutComponent } from './auth/logout/logout.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { QuizDetailComponent } from './quiz/quiz-detail/quiz-detail/quiz-detail.component';
-import { QuestionComponent } from './question/question.component';
+import { QuestionComponent } from './quiz/quiz-detail/quiz-detail/question/question.component';
 import { AnswerComponent } from './quiz/quiz-detail/quiz-detail/question/answer/answer.component';
-import { QuizAnswerComponent } from './quiz-answer/quiz-answer.component';
+
 
 
 
@@ -40,10 +40,7 @@ import { QuizAnswerComponent } from './quiz-answer/quiz-answer.component';
     QuizDetailComponent,
     QuestionComponent,
     AnswerComponent,
-    QuizAnswerComponent,
-    
-
-    
+  
   ],
 
   imports: [

@@ -26,9 +26,7 @@ export class QuizComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.quizService.getQuizzes().subscribe((res) => {
-      this.quizzes = res;
-    });
+    
   }
   detal(slug:string){
 
