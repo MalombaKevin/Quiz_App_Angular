@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.0.5",
-    "@types/jest": "^28.1.4"
+    "@types/jest": "^28.1.4",
+    "angular-cli-ghpages": "^1.0.0"
   }
 }

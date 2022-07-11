@@ -24,8 +24,8 @@ export class AddQuizComponent implements OnInit {
             'order':new FormControl ('grrr'),
             'answers':new FormArray([
               this.fb.group(
-                {'label':new FormControl(''),
-              'isCorrect': new FormControl()
+              {'label':new FormControl('team'),
+              'isCorrect': new FormControl('leisure')
       
               }
               )
@@ -39,7 +39,7 @@ export class AddQuizComponent implements OnInit {
     
       }
     )
-
+console.log(this.addQuizform)
 
   }
 
@@ -50,12 +50,36 @@ export class AddQuizComponent implements OnInit {
   }
 
   get answers(){
-    
+    return (<FormArray> this.addQuizform.controls['questions'].get('answers')).controls
 
-    return (<FormArray> this.addQuizform.get('questions')?.get('answers')).controls
+    // return (<FormArray> this.addQuizform.get('questions')?.get('answers')).controls
   }
 
-  collecta(){}
+  addques(){
+
+    const control=this.fb.group({
+      'label':new FormControl('hello'),
+            'order':new FormControl ('grrr'),
+            'answers':new FormArray([
+              this.fb.group(
+              {'label':new FormControl('team'),
+              'isCorrect': new FormControl('leisure')
+      
+              }
+              )
+            ])
+      
+      
+    })
+
+    this.questions.push(control)
+
+    
+  }
+
+  delques(){
+    this.questions.pop()
+  }
 
 
 
