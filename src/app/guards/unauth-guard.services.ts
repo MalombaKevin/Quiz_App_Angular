@@ -1,7 +1,7 @@
-import { GeneralService } from 'app/services/general.service';
+import { GeneralService } from '../services/general.service';
 import { Injectable } from '@angular/core';
 import { Router, CanActivate } from '@angular/router';
-import { AuthService } from 'app/services/auth.service';
+import { AuthService } from '../services/auth.service';
 @Injectable()
 export class UnAuthGuardService implements CanActivate {
   constructor(
