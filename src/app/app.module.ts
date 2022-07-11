@@ -11,7 +11,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CookieService } from 'ngx-cookie-service';
-import { QuizDetailComponent } from './quiz-detail/quiz-detail.component';
+
 import { QuizComponent } from './quiz/quiz.component';
 import { AuthService } from './services/auth.service';
 import { EndpointsService } from './services/endpoints.service';
@@ -21,7 +21,7 @@ import { LogoutComponent } from './auth/logout/logout.component';
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { QuizDetailComponent } from './quiz/quiz-detail/quiz-detail/quiz-detail.component';
-import { QuestionComponent } from './quiz/quiz-detail/quiz-detail/question/question.component';
+import { QuestionComponent } from './question/question.component';
 import { AnswerComponent } from './quiz/quiz-detail/quiz-detail/question/answer/answer.component';
 import { QuizAnswerComponent } from './quiz-answer/quiz-answer.component';
 
