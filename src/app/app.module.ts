@@ -22,6 +22,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { QuizDetailComponent } from './quiz/quiz-detail/quiz-detail/quiz-detail.component';
 import { QuestionComponent } from './quiz/quiz-detail/quiz-detail/question/question.component';
 import { AnswerComponent } from './quiz/quiz-detail/quiz-detail/question/answer/answer.component';
+import { AddQuizComponent } from './quiz/add-quiz/add-quiz.component';
 
 
 
@@ -38,6 +39,7 @@ import { AnswerComponent } from './quiz/quiz-detail/quiz-detail/question/answer/
     QuizDetailComponent,
     QuestionComponent,
     AnswerComponent,
+    AddQuizComponent,
     
 
     

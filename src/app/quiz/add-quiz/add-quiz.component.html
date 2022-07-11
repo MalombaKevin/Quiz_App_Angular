@@ -1,0 +1,57 @@
+<div>
+    <div class="container w-50 mt-5">
+        <form [formGroup]="addQuizform" >
+            <!-- Name input -->
+            <div class="form-outline mb-4">
+              <input type="text" id="form4Example1" class="form-control" formControlName="name" />
+              <label class="form-label" for="form4Example1">Name</label>
+            </div>
+          
+        
+            <!-- Message input -->
+            <div class="form-outline mb-4">
+              <textarea class="form-control" id="form4Example3" rows="4" formControlName="description"></textarea >
+              <label class="form-label" for="form4Example3">Description</label>
+            </div>
+        
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4"  formControlName="roll-out" />
+              <label class="form-check-label" for="form4Example4">
+                Roll-out
+              </label>
+            </div>
+
+            <div class="form-group"  formArrayName="questions" >
+                <label for=""> Questions</label>
+                <div *ngFor="let control of questions;let i=index" [formGroupName]="i" >
+                    <!-- <div *ngFor="let control of $any(addQuizform.get('questions')).controls;let i=index" [formGroupName]="i" > -->
+
+                    <input type="text" id="form4Example1" class="form-control" formControlName="label" />
+                    <input type="text" id="form4Example1" class="form-control" formControlName="order" />
+
+                    <div formArrayName="answers">
+                        <label for="">Answers</label>
+                        <div *ngFor="let answer of answers;let j=index" [formGroupName]="j">
+                           <div>
+                            <input type="text" id="form4Example1" class="form-control" formControlName="label" />
+                            <input type="text" id="form4Example1" class="form-control" formControlName="isCorrect" />  
+
+                           </div> 
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block mb-4" >Submit</button>
+          </form>
+        
+    </div>
+</div>

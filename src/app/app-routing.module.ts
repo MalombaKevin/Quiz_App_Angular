@@ -9,6 +9,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { LogoutComponent } from './auth/logout/logout.component';
 import { UnAuthGuardService } from './guards/unauth-guard.services';
 import { QuizDetailComponent } from './quiz/quiz-detail/quiz-detail/quiz-detail.component';
+import { AddQuizComponent } from './quiz/add-quiz/add-quiz.component';
 const routes: Routes = [
   {path:'',redirectTo:'home',pathMatch:'full'},
   {path:'register',component:SignupComponent},
@@ -16,7 +17,11 @@ const routes: Routes = [
   {path:'profile',component:ProfileComponent,canActivate:[AuthGuardService]},
   {path:'login',component:LoginComponent},
   {path:'quizlist',component:QuizComponent,canActivate:[AuthGuardService],},
-  {path:'quizlist/:slug',component:QuizDetailComponent,canActivate:[AuthGuardService]}
+  {path:'quizlist/:slug',component:QuizDetailComponent,canActivate:[AuthGuardService]},
+  {
+    path:'addquiz',component:AddQuizComponent
+  },
+
   
 ];
 
