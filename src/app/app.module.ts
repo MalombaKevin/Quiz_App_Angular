@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { LogoutComponent } from './auth/logout/logout.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { QuizDetailComponent } from './quiz-detail/quiz-detail.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     HomeComponent,
     LogoutComponent,
     QuizComponent,
-    NavbarComponent
+    NavbarComponent,
+    QuizDetailComponent
 
 
     
