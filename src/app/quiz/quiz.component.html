@@ -1,1 +1,23 @@
-<p>quiz works!</p>
+<div class="container-fluid mt-3" >
+   <div class="row">
+         <div class="col-md-2" *ngFor="let quiz of quizzes">
+
+            <!-- https://res.cloudinary.com/dooop3pja/image/upload/v1657400219/k487ajcqwoe1f9culbbp.png  -->
+            <!-- image/upload/v1657287592/tpmgbcddbwdtpzg2uksd.png -->
+
+            <div class="card" style="width: 18rem;" >
+               <img src="https://res.cloudinary.com/dooop3pja/{{quiz.image}}"
+               
+                   class="card-img-top" alt="...">
+               <div class="card-body">
+                   <h5 class="card-title">{{quiz.name}}</h5>
+                   <p class="card-text">{{quiz.description}}</p>
+                   <a class="btn btn-primary" (click)="detal(quiz.slug)" style="margin-top: 22px;">Start Quiz</a>
+               </div>
+           </div> <br>
+
+   
+
+   </div>
+
+   

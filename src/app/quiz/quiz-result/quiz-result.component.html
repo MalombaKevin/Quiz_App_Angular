@@ -1,0 +1,13 @@
+<div *ngIf="data">
+    <div class="data">
+        <h1>Results</h1>
+        <p>{{data.name}}</p> 
+        <p>{{data.description}}</p> 
+        <div class="score">
+         <p>score <span>{{data.quiztaker_set.score}}</span></p>
+         <p><span>{{data.quiztaker_set.timestamp|date}}</span></p> 
+         </div>
+     </div>
+
+</div> 
+
