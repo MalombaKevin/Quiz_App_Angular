@@ -7,6 +7,7 @@ import { QuizService } from '../services/quiz.service';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  
 
   constructor(private qs:QuizService) { }
 

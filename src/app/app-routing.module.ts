@@ -9,14 +9,16 @@ import { QuizComponent } from './quiz/quiz.component';
 import { LogoutComponent } from './auth/logout/logout.component';
 import { UnAuthGuardService } from './guards/unauth-guard.services';
 import { QuizDetailComponent } from './quiz/quiz-detail/quiz-detail/quiz-detail.component';
+import { QuizResultComponent } from './quiz/quiz-result/quiz-result.component';
 const routes: Routes = [
-  {path:'',redirectTo:'home',pathMatch:'full'},
+  {path:'',component:HomeComponent,canActivate:[AuthGuardService]},
   {path:'register',component:SignupComponent},
   {path:'home',component:HomeComponent,canActivate:[AuthGuardService]},
   {path:'profile',component:ProfileComponent,canActivate:[AuthGuardService]},
   {path:'login',component:LoginComponent},
   {path:'quizlist',component:QuizComponent,canActivate:[AuthGuardService],},
-  {path:'quizlist/:slug',component:QuizDetailComponent,canActivate:[AuthGuardService]}
+  {path:'quizlist/:slug',component:QuizDetailComponent,canActivate:[AuthGuardService]},
+  {path: 'quizresult/:slug/result',component:QuizResultComponent,canActivate:[AuthGuardService]}
   
 ];
 
