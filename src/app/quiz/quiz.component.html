@@ -1,15 +1,14 @@
 <div class="container-fluid mt-3" >
    <div class="row">
-   
          <div class="col-md-2" *ngFor="let quiz of quizzes">
 
             <div class="card" style="width: 18rem;" >
-               <img src="https://wallpapercave.com/wp/wp5722053.png"
+               <img src="quiz.images"
                    class="card-img-top" alt="...">
                <div class="card-body">
                    <h5 class="card-title">{{quiz.name}}</h5>
                    <p class="card-text">{{quiz.description}}</p>
-                   <a class="btn btn-primary" (click)="detal(quiz.slug)">Start Quiz</a>
+                   <a class="btn btn-primary" (click)="detal(quiz.slug)" style="margin-top: 22px;">Start Quiz</a>
                </div>
            </div> <br>
 

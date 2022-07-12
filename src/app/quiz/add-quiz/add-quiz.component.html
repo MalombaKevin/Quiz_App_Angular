@@ -16,7 +16,7 @@
         
             <!-- Checkbox -->
             <div class="form-check d-flex justify-content-center mb-4">
-              <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4"  formControlName="rollout" />
+              <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked  formControlName="rollout" />
               <label class="form-check-label" for="form4Example4">
                 Roll-out
               </label>
@@ -24,11 +24,11 @@
 
             <div class="form-group"  formArrayName="questions" >
                 <label for=""> Questions</label>
-                <div *ngFor="let control of questions;let i=index" [formGroupName]="i" >
+                <div *ngFor="let group of questions;let i=index" [formGroupName]="i" >
                     <!-- <div *ngFor="let control of $any(addQuizform.get('questions')).controls;let i=index" [formGroupName]="i" > -->
 
                     <input type="text" id="form4Example1" class="form-control" formControlName="label" />
-                    <input type="text" id="form4Example1" class="form-control" formControlName="order" />
+                    <input type="number" id="form4Example1" class="form-control" formControlName="order" />
 
                     <div formArrayName="answers">
                         <label for="">Answers</label>
@@ -49,7 +49,7 @@
 
             </div>
             <button class="btn btn-success" (click)="addques()">Add question+</button>
-            <button class="btn btn-success" (click)="delques()">delete question</button>
+            <button class="btn btn-warning" (click)="delques()">delete question</button>
           
             <!-- Submit button -->
             <button type="submit" class="btn btn-primary btn-block mb-4" >Submit</button>

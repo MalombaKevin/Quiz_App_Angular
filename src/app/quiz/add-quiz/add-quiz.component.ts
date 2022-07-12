@@ -14,24 +14,11 @@ export class AddQuizComponent implements OnInit {
 
     this.addQuizform=this.fb.group(
       {
-        'name':new FormControl(''),
-        'description':new FormControl(''),
-        'rollout':new FormControl(''),
-        'questions':this.fb.array([
-        this.fb.group(
-          {
-            'label':new FormControl('hello'),
-            'order':new FormControl ('grrr'),
-            'answers':new FormArray([
-              this.fb.group(
-              {'label':new FormControl('team'),
-              'isCorrect': new FormControl('leisure')
-      
-              }
-              )
-            ])
-          }
-        )
+        name: [''],
+        description:[''],
+        rollout:[''],
+        questions:this.fb.array([
+        
           
          
     
@@ -39,7 +26,6 @@ export class AddQuizComponent implements OnInit {
     
       }
     )
-console.log(this.addQuizform)
 
   }
 
@@ -57,22 +43,17 @@ console.log(this.addQuizform)
 
   addques(){
 
-    const control=this.fb.group({
-      'label':new FormControl('hello'),
-            'order':new FormControl ('grrr'),
-            'answers':new FormArray([
-              this.fb.group(
-              {'label':new FormControl('team'),
-              'isCorrect': new FormControl('leisure')
-      
-              }
-              )
-            ])
-      
-      
-    })
+    const cont=this.fb.group(
+      {
+        label:[''],
+        order:[''],
+        answers:this.fb.array([
+          
+        ])
+      }
+    )
 
-    this.questions.push(control)
+    this.questions.push(cont)
 
     
   }
@@ -81,7 +62,16 @@ console.log(this.addQuizform)
     this.questions.pop()
   }
 
+ addans(){
+    const ans=this.fb.group(
+    {label:[''],
+    isCorrect: [false]
 
+    }
+    )
+
+   this.answers.push()
+ }
 
   
 
