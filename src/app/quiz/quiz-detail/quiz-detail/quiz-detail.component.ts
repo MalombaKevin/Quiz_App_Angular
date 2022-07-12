@@ -14,6 +14,7 @@ export class QuizDetailComponent implements OnInit {
   selectedAnswer:any
   answers:number[]= [];
   timeplaceholder!:string;
+  results:any;
   constructor(
 
     private route: ActivatedRoute,
@@ -40,7 +41,7 @@ export class QuizDetailComponent implements OnInit {
     var timeInMinutes = time*60*60
     var quizTime = timeInMinutes/60
     var quiztimer = setInterval(() =>{
-      if (quizTime < 0){
+      if (quizTime <= 0){
         clearInterval(quiztimer)
 
       }
@@ -83,8 +84,10 @@ export class QuizDetailComponent implements OnInit {
       "answer": this.selectedAnswer
     }
 
-    this.qzs.submitQuiz(body, this.slug).subscribe((res) => {
-      this.router.navigate(['/quizzes/' + this.slug + '/result']);
+    this.qzs.submitQuiz(body, this.slug).subscribe((res:any) => {
+      console.log(res)
+      this.answers = res
+      this.router.navigate(['quizresult/' + this.slug + '/result'],{state:{'answers':this.answers}});
     });
   }
 
