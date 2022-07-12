@@ -13,7 +13,8 @@ export class QuizDetailComponent implements OnInit {
   currentIndex: number = 0;
   selectedAnswer:any
   answers:number[]= [];
-
+  timeplaceholder!:string;
+  results:any;
   constructor(
 
     private route: ActivatedRoute,
@@ -29,11 +30,32 @@ export class QuizDetailComponent implements OnInit {
         this.router.navigate(['/quiz/' + this.slug + '/result']);
       }
       this.initializeAnswers();
+      this.timingQuiz();
     });
 
 
   }
 
+  timingQuiz(){
+    const time= 5
+    var timeInMinutes = time*60*60
+    var quizTime = timeInMinutes/60
+    var quiztimer = setInterval(() =>{
+      if (quizTime <= 0){
+        clearInterval(quiztimer)
+
+      }
+      else {
+        quizTime-- 
+        let seconds =Math.floor(quizTime%60)
+        let minutes = Math.floor(quizTime/60)%60
+        this.timeplaceholder = `TIME:${minutes}:${seconds}`
+
+       }
+
+    },1000)
+
+  }
 
   initializeAnswers() {
     const usersAnswers = this.quiz.quiztakers_set.usersanswer_set;
@@ -62,8 +84,10 @@ export class QuizDetailComponent implements OnInit {
       "answer": this.selectedAnswer
     }
 
-    this.qzs.submitQuiz(body, this.slug).subscribe((res) => {
-      this.router.navigate(['/quizzes/' + this.slug + '/result']);
+    this.qzs.submitQuiz(body, this.slug).subscribe((res:any) => {
+      console.log(res)
+      this.answers = res
+      this.router.navigate(['quizresult/' + this.slug + '/result'],{state:{'answers':this.answers}});
     });
   }
 
