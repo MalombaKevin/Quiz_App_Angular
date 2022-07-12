@@ -87,7 +87,7 @@ export class QuizDetailComponent implements OnInit {
     this.qzs.submitQuiz(body, this.slug).subscribe((res:any) => {
       console.log(res)
       this.answers = res
-      this.router.navigate(['quizresult/' + this.slug + '/result'],{state:{'answers':this.answers}});
+      this.router.navigate(['quizresult/' + this.slug + '/result'],{state:{data:this.answers}});
     });
   }
 
