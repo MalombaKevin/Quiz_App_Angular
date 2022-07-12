@@ -1,28 +1,27 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-h3{
     text-align: center;
-    margin-top: 20px;
+}
+.h3{
+    text-align: center;
+    color:#030c51 ;
     text-decoration: underline;
-    color: #030c51;
-}
-.card-body p{
-    font-style: italic;
-    text-align: center;
+    padding-top: 30px;
 }
 .card-title{
-    text-align: center;
-}
-.h5{
     color: #030c51;
 }
+.card-text{
+    font-style: italic;
+}
 .card-img-top{
-   padding-top: 10px;
-   padding-left: 20px;
     height: 200px;
-    width:200px;
+    width: 250px;
+    padding-top: 10px;
 }
-.text-muted .btn{
+.btn{
     background-color: #030c51;
+    font-style: italic;
+    margin-top: 22px;
 }
+ 
