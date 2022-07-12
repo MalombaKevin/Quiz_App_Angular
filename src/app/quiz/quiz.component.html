@@ -1,9 +1,13 @@
-<div class="container-fluid mt-3" >
+<!-- <div class="container-fluid mt-3" >
    <div class="row">
          <div class="col-md-2" *ngFor="let quiz of quizzes">
 
+             https://res.cloudinary.com/dooop3pja/image/upload/v1657400219/k487ajcqwoe1f9culbbp.png  
+            image/upload/v1657287592/tpmgbcddbwdtpzg2uksd.png 
+
             <div class="card" style="width: 18rem;" >
-               <img src="quiz.images"
+               <img src="https://res.cloudinary.com/dooop3pja/{{quiz.image}}"
+               
                    class="card-img-top" alt="...">
                <div class="card-body">
                    <h5 class="card-title">{{quiz.name}}</h5>
@@ -14,6 +18,20 @@
 
    
 
-   </div>
-
-   
+   </div> -->
+<div class="container">
+    <h3 >Brainstorm by Category</h3>
+    <div class="row">
+        <div class="col-md-4 mx-auto my-5" *ngFor="let quiz of quizzes">
+   <!-- <div class="card-deck" *ngFor="let quiz of quizzes"> -->
+    <div class="card" >
+      <img class="card-img-top"  src="https://res.cloudinary.com/dooop3pja/{{quiz.image}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"> {{quiz.name}}</h5>
+        <p class="card-text">{{quiz.description}}</p>
+        <p class="card-text"><small class="text-muted"><a class="btn btn-primary" (click)="detal(quiz.slug)" style="margin-top: 22px;">Start Quiz</a></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

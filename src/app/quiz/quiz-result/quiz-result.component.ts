@@ -12,7 +12,7 @@ export class QuizResultComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-  this.data =this.act.snapshot.data
+  this.data =history.state.data
   console.log(this.data)
   console.log(this.data.name)
   console.log(this.data.description)
