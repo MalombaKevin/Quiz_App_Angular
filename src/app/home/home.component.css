@@ -3,7 +3,9 @@
     font-size: 62.5%;
     
   }
-  
+  .container1{
+    background-image: url(/src/assets/brain1.jpg);
+  }
   * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -80,10 +82,10 @@
   
   .hidden {
     display: none;
-  }
+  } 
   
   /* BUTTONS */
-  .btn {
+   .btn {
     font-size: 1.8rem;
     padding: 1rem 0;
     width: 20rem;
@@ -108,7 +110,7 @@
     width: 540px;
     background: #fff;
     border-radius: 5px;
-  }
+  } */
   .info_box .info_title{
     height: 60px;
     width: 100%;
@@ -118,8 +120,8 @@
     padding: 0 35px;
     font-size: 30px;
     font-weight: 600;
-  }
-  .info_box .info_list{
+  }  
+   .info_box .info_list{
     padding: 15px 35px;
   }
   .info_box .info_list .info{
@@ -155,8 +157,8 @@
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
-  }
-  .buttons button.quit{
+  } 
+ .buttons button.quit{
     color: #007bff;
     border-color: #007bff;
   }
@@ -235,9 +237,8 @@
  .quiz_box section .option_list{
   padding: 20px 0;
   display: block;
- }
-
- section .option_list .option{
+ } 
+  section .option_list .option{
   background: aliceblue;
   border: 1px solid #84c5fe;
   border-radius: 5px;
@@ -289,7 +290,7 @@ section .option_list .option:hover{
   border-color: #a42834;
 }
 
-/* .quiz_box footer{
+ .quiz_box footer{
   height: 60px;
   width: 100%;
   padding: 0 30px;
@@ -332,7 +333,7 @@ footer .next_btn:hover{
 }
 
 /* result box */
-.result_box{
+ .result_box{
   background: #fff;
   width: 450px;
   padding: 25px 30px;
