@@ -34,5 +34,9 @@ export class EndpointsService {
   submitQuiz(slug: string) {
     return this.gen.hostUrl + 'quizzes/' + slug + "/submit/";
   }
+  quizTaker(){
+    return this.gen.hostUrl + 'taker/';
+  }
+
 }
 
