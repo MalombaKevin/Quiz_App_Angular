@@ -26,6 +26,7 @@ export class QuizComponent implements OnInit {
 
 
   ngOnInit(): void {
+    
   }
   detal(slug:string){
 

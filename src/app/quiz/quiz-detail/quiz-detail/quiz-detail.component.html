@@ -12,6 +12,9 @@
                 <div class="question-number">
                     QUESTION  {{currentIndex + 1}} OF {{quiz.question_set.length}}
                 </div>
+                <div class="timer">
+                    <p [innerHTML]="timeplaceholder"></p>
+                </div>
                 <app-question [selectedAnswer]="answers[currentIndex]" [question]="quiz['question_set'][currentIndex]" (selectAnswer)="selectAnswer($event)" style="display: flex;"></app-question>
             </div>
         </div>
@@ -24,6 +27,7 @@
             </button>
         </div>
     </div>
-    
+           
+           
 </body>
 </html>
