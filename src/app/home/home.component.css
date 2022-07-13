@@ -8,7 +8,7 @@
     height: 650 px;
     background-size: 100%;  
     background-size: cover;
-    color: #fff;background-image: url("/assets/images/istockphoto-1292771469-170667a.jpg")  
+    color: #fff;background-image: url("/assets/imge.jpeg")  
     
 } 
 
@@ -21,7 +21,6 @@
     margin: 0;
     padding: 0;
     color: rgb(227, 225, 225,0.8);
-    background-color: #1b2467;
   }
   
   h1,
@@ -34,7 +33,7 @@
   h1 {
     padding-top: 2rem;
     font-size: 5.4rem;
-    color: rgb(250, 239, 239,0.8);
+    color: black;
     margin-bottom: 3rem;
     text-align: center;
     justify-content: center;
