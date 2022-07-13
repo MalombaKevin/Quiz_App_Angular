@@ -1,3 +1,8 @@
 body{
-    background-color: blue;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(/assets/imge.jpeg);
+    background-position: center;
+    background-size: cover;
 }
