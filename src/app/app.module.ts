@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {CommonModule} from '@angular/common';
-
+import {ProgressBarModule} from "angular-progress-bar"
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
@@ -51,7 +51,8 @@ import { QuizResultComponent } from './quiz/quiz-result/quiz-result.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    ProgressBarModule
   ],
 
   providers: [

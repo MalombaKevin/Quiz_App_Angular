@@ -69,14 +69,15 @@ border: 1px solid rgba(255, 255, 255, 0.3);
             </p>
             <div class="score text-light">
                 <p>score: <br><span class="ms-3 fs-2 text-warning">{{data.quiztaker_set.score}}%</span></p>
+                <progress-bar [progress]="data.quiztaker_set.score" [color-degraded]="{'35':'red','45':'yellow','60':'pink','80':'green'}">
+                </progress-bar>
 
-
-                <div class="progress rounded-pill" style="height: 3px;">
-                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <!-- <div class="progress rounded-pill" style="height: 3px;">
+                    <div class="progress-bar" role="progressbar" [ngStyle]="[{'width.%':data.quitaker_set.score}]" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <div class="progress" style="height: 20px;">
-                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
+                    <div class="progress-bar" role="progressbar" [ngStyle]="[{'width.%':data.quitaker_set.score}]"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div> -->
 
             </div>
           </div>

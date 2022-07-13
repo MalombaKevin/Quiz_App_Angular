@@ -3,6 +3,16 @@
     font-size: 62.5%;
     
   }
+  
+  #home {  
+    height: 650 px;
+    background-size: 100%;  
+    background-size: cover;
+    overflow: scroll;
+    color: #fff;background-image: url("/assets/imge.jpeg")  
+    
+} 
+
   .container1{
     background-image: url(/src/assets/brain1.jpg);
   }
@@ -34,7 +44,7 @@
   h1 {
     padding-top: 2rem;
     font-size: 5.4rem;
-    color: #ffff;
+    color: black;
     margin-bottom: 3rem;
     text-align: center;
     justify-content: center;
@@ -117,13 +127,14 @@
   .info_box{
     width: 540px;
     border-radius: 5px;
-   
   } 
   .info_box .info_title{
     height: 60px;
     width: 100%;
     border-bottom: 1px solid lightgrey;
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0 35px;
     font-size: 30px;
     font-weight: 600;
