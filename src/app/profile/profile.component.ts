@@ -12,6 +12,10 @@ export class ProfileComponent implements OnInit {
   constructor(private qs:QuizService) { }
 
   ngOnInit(): void {
+    this.qs.getTaker().subscribe((data:any)=>{
+      console.log(data);
+    }
+    )
   }
 
 }
