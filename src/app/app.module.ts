@@ -24,6 +24,7 @@ import { QuizDetailComponent } from './quiz/quiz-detail/quiz-detail/quiz-detail.
 import { QuestionComponent } from './quiz/quiz-detail/quiz-detail/question/question.component';
 import { AnswerComponent } from './quiz/quiz-detail/quiz-detail/question/answer/answer.component';
 import { QuizResultComponent } from './quiz/quiz-result/quiz-result.component';
+import { AddQuizComponent } from './quiz/add-quiz/add-quiz.component';
 
 
 
@@ -42,6 +43,8 @@ import { QuizResultComponent } from './quiz/quiz-result/quiz-result.component';
     QuestionComponent,
     AnswerComponent,
     QuizResultComponent,
+    AddQuizComponent
+    
   
   ],
 
@@ -52,7 +55,7 @@ import { QuizResultComponent } from './quiz/quiz-result/quiz-result.component';
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-    ProgressBarModule
+    ProgressBarModule,
   ],
 
   providers: [
