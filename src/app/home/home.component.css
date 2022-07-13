@@ -11,14 +11,14 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    color: rgb(227, 225, 225,0.8);
+    color: #fff;
    
   }
 
   body{
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url(/assets/imge.jpeg);
     background-position: center;
     background-size: cover;
@@ -34,7 +34,7 @@
   h1 {
     padding-top: 2rem;
     font-size: 5.4rem;
-    color: rgb(250, 239, 239,0.8);
+    color: #ffff;
     margin-bottom: 3rem;
     text-align: center;
     justify-content: center;
