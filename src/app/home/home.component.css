@@ -4,13 +4,20 @@
     
   }
   
+  #home {  
+    height: 650 px;
+    background-size: 100%;  
+    background-size: cover;
+    color: #fff;background-image: url("/assets/images/istockphoto-1292771469-170667a.jpg")  
+    
+} 
+
   * {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     color: rgb(227, 225, 225);
-    background-color: #030c51;
   }
   
   h1,
