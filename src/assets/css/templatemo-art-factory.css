@@ -231,14 +231,14 @@ a.main-button-slider {
 }
 
 a.main-button-slider:hover {
-  background-color: #0088e8;
+  background-color:#252c65;
 }
 
 a.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #00b4c6;
+  background-color:#252c65;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -436,7 +436,7 @@ header
 .header-area .main-nav .nav li.submenu ul li a {
   display: block;
   background: #fff;
-  color: #3b566e;
+  color:#252c65;
   padding-left: 20px;
   height: 40px;
   line-height: 40px;
@@ -461,7 +461,7 @@ header
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background: #f55858;
+  background:#252c65;
 }
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
@@ -693,7 +693,7 @@ header
     height: auto !important;
   }
   .header-area .main-nav .nav li.submenu:after {
-    color: #3b566e;
+    color:#252c65;
     right: 25px;
     font-size: 14px;
     top: 15px;
@@ -721,7 +721,7 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/banner-bg.png);
+  background-color:#252c65;
   background-repeat: no-repeat;
 /*
 TRY IT ... with or without CENTER CENTER
@@ -1220,12 +1220,12 @@ contact
 
 .contact-form {
   padding: 100px;
-  background: rgba(0, 136, 232, 1);
+  /* background:#252c65;
   background: -moz-linear-gradient(
     -45deg,
-    rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
-    rgba(0, 136, 232, 1) 100%
+    #252c65 0%,
+    #252c65 0%,
+    #252c65 100%
   );
   background: -webkit-gradient(
     left top,
@@ -1257,7 +1257,7 @@ contact
     rgba(0, 136, 232, 1) 0%,
     rgba(0, 182, 198, 1) 0%,
     rgba(0, 136, 232, 1) 100%
-  );
+  ); */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088e8', endColorstr='#0088e8', GradientType=1 );
 }
 
@@ -1376,7 +1376,7 @@ preloader
 */
 #preloader {
   overflow: hidden;
-  background-image: linear-gradient(145deg, #00b4c6 0%, #0088e8 100%);
+  background-image: linear-gradient(145deg, #252c65 0%, #252c65 100%);
   left: 0;
   right: 0;
   top: 0;
