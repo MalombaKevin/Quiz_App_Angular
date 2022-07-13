@@ -6,7 +6,8 @@
     cursor: pointer;
 }
 .answer :hover {
-        background-color: #eee;
+        background-color: rgb(62, 35, 196);
+        color: rgb(14, 14, 14);
     }
     
     div {
@@ -14,8 +15,8 @@
     }
 
     .letter {
-        width: 30px;
-        height: 30px;
+        width: 60px;
+        height: 60px;
         border-radius: 50%;
         display: flex;
         margin-right: 20px;
