@@ -1,7 +1,13 @@
 
 
 
-
+<style>
+  .boxa{
+    width: 1vw;
+    height: 1vw;
+    margin-left: 1vw;
+  }
+</style>
 
 
 
@@ -57,6 +63,12 @@ border: 1px solid rgba(255, 255, 255, 0.3);
         <div class="card-body">
           <div class="text-light d-flex justify-content-between">
             <h6 class="card-title text-light">&#171;Your score|<span class="text-warning">{{data.name}}</span>&#187;</h6>
+            <div class="d-flex">
+              <div class="boxa me-1" style="background-color: red;"></div><span>Poor</span>
+              <div class="boxa me-1" style="background-color: aqua;"></div><span>Average</span>
+              <div class="boxa me-1" style="background-color: pink;"></div> <span>Passed</span>
+              <div class="boxa me-1" style="background-color: green;"></div><span>Excellent</span>
+            </div>
             <p class="text-light">Time taken in seconds: <span class="text-warning">{{processtime}}</span></p>
           </div>
 
@@ -69,7 +81,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
             </p>
             <div class="score text-light">
                 <p>score: <br><span class="ms-3 fs-2 text-warning">{{data.quiztaker_set.score}}%</span></p>
-                <progress-bar [progress]="data.quiztaker_set.score" [color-degraded]="{'35':'red','45':'yellow','60':'pink','80':'green'}">
+                <progress-bar [progress]="data.quiztaker_set.score" [color-degraded]="{'35':'red','45':'aqua','60':'pink','80':'green'}">
                 </progress-bar>
 
                 <!-- <div class="progress rounded-pill" style="height: 3px;">
