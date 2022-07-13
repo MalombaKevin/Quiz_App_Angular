@@ -98,7 +98,6 @@
     font-size: 1.8rem;
     padding: 1rem 0;
     width: 20rem;
-    text-align: center;
     border: 0.1rem solid #b1c1cf;
     margin-bottom: 1rem;
     margin-top: 29px;
@@ -117,25 +116,29 @@
   }
   .info_box{
     width: 540px;
-    background: #fff;
     border-radius: 5px;
-  } */
+   
+  } 
   .info_box .info_title{
     height: 60px;
     width: 100%;
     border-bottom: 1px solid lightgrey;
     display: flex;
-    align-items: center;
     padding: 0 35px;
     font-size: 30px;
     font-weight: 600;
+    text-align: center;
+    justify-content: center;
   }  
+
    .info_box .info_list{
     padding: 15px 35px;
   }
   .info_box .info_list .info{
     margin: 5px 0;
     font-size: 58px;
+    text-align: center;
+    justify-content: center;
   }
   .info_box .info_list .info_span{
     font-weight: 600;
