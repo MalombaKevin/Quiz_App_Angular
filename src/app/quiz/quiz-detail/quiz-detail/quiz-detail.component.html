@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color: #08105b; color: #ffff; font-size: 21px; padding-top: 20px;">
-    <div class="container" style="text-align: center; justify-content: center; width: 470px; height: 470px;">
+<body style=" color: #ffff; font-size: 21px; padding-top: 20px;">
+    <div class="container" style="text-align: center; justify-content: center; width: 570px; height: 470px;">
         <div class="question-wrapper" style="border: 5px solid white;">
             <div *ngIf="quiz!=null" >
                 <div class="question-number">
@@ -27,7 +27,7 @@
             <button  (click)="next()" [innerHtml]="currentIndex == quiz.question_set.length - 1 ? 'Submit' : 'Next'" style="padding: 8px 20px;">
             </button>
         </div>
-    </div>
+    
            
            
 </body>
