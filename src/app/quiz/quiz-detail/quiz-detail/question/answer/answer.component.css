@@ -1,0 +1,34 @@
+.answer {
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.answer :hover {
+        background-color: rgb(62, 35, 196);
+        color: rgb(14, 14, 14);
+    }
+    
+    div {
+        display: inline-block;
+    }
+
+    .letter {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: #000;
+        border: 2px solid #eee;
+    }
+
+    .selected-letter {
+        background-color: rgba(211, 182, 16, 0.921);
+        color: #fff;
+        border-color: transparent;
+    }
