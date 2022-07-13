@@ -17,7 +17,7 @@ export class LogoutComponent implements OnInit {
 
   signout(){
     this.gen.delToken()
-    this.router.navigate(['login'])
+    this.router.navigate([''])
     
   }
 

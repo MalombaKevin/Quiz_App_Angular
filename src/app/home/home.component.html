@@ -1,33 +1,33 @@
-<html lang="en">
+<!-- <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+ 
 </head>
 <body>
  <div class="container1">
-    
-    <div id="home" class="flex-center flex-column">
+   
+    <div id="home" class="flex-center flex-column" align="center">
       <h1>The Moringa Brainer</h1>
       <img src="/src/assets/brain1.jpg" alt="">
     </div>
-
+ 
     <div class="info_box">
       <div class="info_title">
-        <span>Some rules of this Quiz</span>
+        <span>Rules of this Quiz</span>
       </div>
     </div>
-      <div class="row">
+      <div class="row" style="text-align: center; justify-content:center;">
         <div class="col-md-8">
           <div>
-            <div class="info" style="font-size: 25px;">1. You will have <span>10 seconds</span> for each question</div>
-            <div class="info"style="font-size: 25px;">2. Once you select your answer, you can't reselect</div>
-            <div class="info"style="font-size: 25px;">3. You can't select any option once time goes off</div>
-            <div class="info"style="font-size: 25px;">4. You can't exit from the quiz while you're playing</div>
-            <div class="info"style="font-size: 25px;">5. You will get points on the basis of your correct answers.</div>
+            <div class="info" style="font-size: 25px;">1.You will have <span>10 seconds</span> for each question</div>
+            <div class="info"style="font-size: 25px;">2.Once you select your answer, you can't reselect</div>
+            <div class="info"style="font-size: 25px;">3.You can't select any option once time goes off</div>
+            <div class="info"style="font-size: 25px;">4.You can't exit from the quiz while you're playing</div>
+            <div class="info"style="font-size: 25px;">5.You will get points on the basis of your correct answers.</div>
           </div>
           <div class="buttons" style="margin-left: 15px;">
               <a routerLink="quizlist"class="btn">ATTEMPT QUIZ</a>
@@ -36,8 +36,302 @@
       <div class="col-md-4">
       </div>
     </div>
-    </div> 
+    </div>
    
      
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Template Mo">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+    <title>Art Factory HTML CSS Template</title>
+    <!--
+
+ART FACTORY
+
+https://templatemo.com/tm-537-art-factory
+
+-->
+    <!-- Additional CSS Files -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../../assets/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../../assets/css/font-awesome.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../../assets/css/templatemo-art-factory.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/css/owl-carousel.css"> --> -->
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="#" class="logo">Moringa Brainer</a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <!-- <ul class="nav">
+                            <li class="scroll-to-section"><a href="#welcome" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#services">Services</a></li>
+                            <li class="scroll-to-section"><a href="#frequently-question">Frequently Questions</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Drop Down</a>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Features</a></li>
+                                    <li><a href="">FAQ's</a></li>
+                                    <li><a href="">Blog</a></li>
+                                </ul>
+                            </li>
+                            <li class="scroll-to-section"><a href="#contact-us">Contact Us</a></li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a> -->
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+                    <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1>Match your skills with the <span style="color:rgb(8, 8, 73)"> Moringa Brainer</span></h1>
+                        <p> And grow everyday</p>
+                        <a routerLink="quizlist" class="main-button-slider" style="background-color:gold">Attempt
+                            Quiz</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                        <img src="https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202012/MIT-Coding-Brain-01-press_0.jpg?itok=JKoUflf8"
+                            class="rounded img-fluid d-block mx-auto" alt="First Vector Graphic">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+
+
+
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="about2">
+        <div class="container">
+            <div class="row">
+                <div class="left-text col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <div class="left-heading">
+                        <h5>Rules of this Quiz</h5>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-clock fs-1"></i>
+                            <div class="text">
+                                <h6>Time</h6>
+                                <p>You will have <span>10 seconds</span> for each question</p>
+                                <p>You can't select any option once time goes off</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-trophy fs-1"></i>
+                            <div class="text">
+                                <h6>Points Awarded</h6>
+                                <p>You will get points on the basis of your correct answers.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-scale-balanced fs-1"></i>
+                            <div class="text">
+                                <h6>Integrity</h6>
+                                <p>Once you select your answer, you can't reselect</p>
+                                <p>You can't exit from the quiz while you're playing</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-image col-lg-7 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <img src="../../assets/images/right-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
+    <!-- <span>Rules of this Quiz</span>
+</div>
+</div>
+<div class="row" style="text-align: center; justify-content:center;">
+  <div class="col-md-8">
+    <div>
+      <div class="info" style="font-size: 25px;">1.You will have <span>10 seconds</span> for each question</div>
+      <div class="info"style="font-size: 25px;">2.Once you select your answer, you can't reselect</div>
+      <div class="info"style="font-size: 25px;">3.You can't select any option once time goes off</div>
+      <div class="info"style="font-size: 25px;">4.You can't exit from the quiz while you're playing</div>
+      <div class="info"style="font-size: 25px;">5.You will get points on the basis of your correct answers.</div>
+    </div>
+   -->
+
+    <!-- ***** Features Small Start ***** -->
+   
+
+    <!-- ***** Frequently Question Start ***** -->
+    
+
+    <!-- ***** Contact Us Start ***** -->
+    <section class="section container-fluid" id="contact-us">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- ***** Contact Map Start ***** -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div id="map">
+                        <!-- How to change your own map point
+                           1. Go to Google Maps
+                           2. Click on your location point
+                           3. Click "Share" and choose "Embed map" tab
+                           4. Copy only URL and paste it within the src="" field below
+                    -->
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0"
+                                    scrolling="no" marginheight="0" marginwidth="0"
+                                    src="https://maps.google.com/maps?width=628&amp;height=555&amp;hl=en&amp;q=Moringa School&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                    href="https://www.kokagames.com/fnf-friday-night-funkin-mods/">FNF Mods</a></div>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    width: 100%;
+                                    height: 555px;
+                                }
+
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    width: 100%;
+                                    height: 510px;
+                                }
+
+                                .gmap_iframe {
+                                    height: 510px !important;
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Contact Map End ***** -->
+
+                <!-- ***** Contact Form Start ***** -->
+                <div class="col-lg-6 col-md-6 col-sm-12 "  style="background-color:#252c65">
+                    <div class="contact-form" >
+                        <form id="contact" action="" method="post">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input name="name" type="text" id="name" placeholder="Full Name" required=""
+                                            class="contact-field">
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <fieldset>
+                                        <input name="email" type="text" id="email" placeholder="E-mail" required=""
+                                            class="contact-field">
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <textarea name="message" rows="6" id="message" placeholder="Your Message"
+                                            required="" class="contact-field"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button type="submit" id="form-submit" class="main-button">Send It</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+            </div>
+        </div>
+    </section>
+    <!-- ***** Contact Us End ***** -->
+
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <p class="copyright">Copyright &copy; 2022 Moringa Brainer
+
+                    </p>
+                </div>
+                <div class="col-lg-5 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery
+    <script src="../../../assets/js/jquery-2.1.0.min.js"></script> -->
+
+    <!-- Bootstrap -->
+    <!-- <script src="../../../assets/js/popper.js"></script>
+    <script src="../../../assets/js/bootstrap.min.js"></script> -->
+
+    <!-- Plugins -->
+    <!-- <script src="../../../assets/js/owl-carousel.js"></script>
+    <script src="../../../assets/js/scrollreveal.min.js"></script>
+    <script src="../../../assets/js/waypoints.min.js"></script>
+    <script src="../../../assets/js/jquery.counterup.min.js"></script>
+    <script src="../../../assets/js/imgfix.min.js"></script> 
+     -->
+    <!-- Global Init -->
+    <script src="../../../assets/js/custom.js"></script>
+
+</body>
+
 </html>
