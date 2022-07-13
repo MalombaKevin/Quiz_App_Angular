@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style=" color: #ffff; font-size: 21px; padding-top: 20px;">
-    <div class="container" style="text-align: center; justify-content: center; width: 570px; height: 470px;">
-        <div class="question-wrapper" style="border: 5px solid white;">
+<app-navbar></app-navbar>
+
+<body style=" color:#252c65;; font-size: 21px; padding-top: 20px;background: rgba(52, 35, 148, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.6px);
+-webkit-backdrop-filter: blur(6.6px);
+border: 1px solid rgba(52, 35, 148, 0.29);">
+    <div class="container w-50" style="text-align: center; justify-content: center; width: 570px; height: 470px;">
+        <div class="question-wrapper" style="border: 5px solid white; ">
             <div *ngIf="quiz!=null" >
                 <div class="question-number">
                     QUESTION  {{currentIndex + 1}} OF {{quiz.question_set.length}}
@@ -15,16 +22,18 @@
                 <div class="timer">
                     <p [innerHTML]="timeplaceholder"></p>
                 </div>
+                <div>
                 <app-question [selectedAnswer]="answers[currentIndex]" [question]="quiz['question_set'][currentIndex]" (selectAnswer)="selectAnswer($event)" style="display: flex;"></app-question>
+                </div>
                </div>
             </div>
         </div>
         
-        <div class="buttons" *ngIf="quiz!=null" style="margin-top: 10px; margin-right: 22px; text-align: center; justify-content: center;">
-            <button (click)="previous()" style="margin-right: 23px; padding: 8px 20px;">
-                Previous
+        <div class="buttons my-5" *ngIf="quiz!=null" style="margin-top: 10px; margin-right: 22px; text-align: center; justify-content: center;">
+            <button (click)="previous()" class="btn btn-warning btn-lg" >
+                &#8592; Previous
             </button>
-            <button  (click)="next()" [innerHtml]="currentIndex == quiz.question_set.length - 1 ? 'Submit' : 'Next'" style="padding: 8px 20px;">
+            <button  (click)="next()"  class="btn btn-primary btn-lg ms-5"  [innerHtml]="currentIndex == quiz.question_set.length - 1 ? 'Submit' : 'Next &#8594;'">
             </button>
         </div>
     
