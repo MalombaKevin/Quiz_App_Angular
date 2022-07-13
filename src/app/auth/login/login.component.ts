@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
     this.auths.log(body).subscribe((res:any)=>{
       this.gen.setToken(res.token)
       console.log(res.token)
-      this.router.navigate([''])
+      this.router.navigate(['quizlist'])
      
     })
     

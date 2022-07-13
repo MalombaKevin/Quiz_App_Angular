@@ -11,9 +11,9 @@ import { UnAuthGuardService } from './guards/unauth-guard.services';
 import { QuizDetailComponent } from './quiz/quiz-detail/quiz-detail/quiz-detail.component';
 import { QuizResultComponent } from './quiz/quiz-result/quiz-result.component';
 const routes: Routes = [
-  {path:'',component:HomeComponent,canActivate:[AuthGuardService]},
+  {path:'',component:HomeComponent},
   {path:'register',component:SignupComponent},
-  {path:'home',component:HomeComponent,canActivate:[AuthGuardService]},
+  {path:'home',component:HomeComponent},
   {path:'profile',component:ProfileComponent,canActivate:[AuthGuardService]},
   {path:'login',component:LoginComponent},
   {path:'quizlist',component:QuizComponent,canActivate:[AuthGuardService],},

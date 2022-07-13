@@ -45,7 +45,7 @@ this.signform=new FormGroup({
     this.auths.reg(body).subscribe((res:any)=>{
     this.gen.setToken(res.token)
 
-    this.router.navigate([''])
+    this.router.navigate(['quizlist'])
       
     
     

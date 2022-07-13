@@ -33,4 +33,7 @@ export class QuizService {
   submitQuiz(body:object, slug:string) {
     return this.http.post(this.endpoints.submitQuiz(slug), body, {headers: this.genService.setheaders()});
   }
+  getTaker(){
+    return this.http.get(this.endpoints.quizTaker(), {headers: this.genService.setheaders()});
+  }
 }
