@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:'register',component:SignupComponent},
   {path:'home',component:HomeComponent},
   {path:'profile',component:ProfileComponent,canActivate:[AuthGuardService]},
-  {path:'login',component:LoginComponent},
+  {path:'login',component:LoginComponent,},
   {path:'quizlist',component:QuizComponent,canActivate:[AuthGuardService],},
   {path:'quizlist/:slug',component:QuizDetailComponent,canActivate:[AuthGuardService]},
   {path: 'quizresult/:slug/result',component:QuizResultComponent,canActivate:[AuthGuardService]},

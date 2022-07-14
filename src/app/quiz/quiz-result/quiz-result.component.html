@@ -34,10 +34,11 @@
 
 
 
+<div class="los">
+<div style="height: 100vh;" class="p-3">
 
-<div style="background-color:#0e2575;height: 100vh;" class="p-3">
-
-<div class="card mb-3 w-75 mx-auto my-5 shadow" style="background: rgba(255, 255, 255, 0.12);
+<div class="card mb-3 w-75 mx-auto my-5 shadow" style=" margin-top: 20%;
+background: rgba(255, 255, 255, 0.12);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);
@@ -80,7 +81,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
               <span>{{data.description}}</span>
             </p>
             <div class="score text-light">
-                <p>score: <br><span class="ms-3 fs-2 text-warning">{{data.quiztaker_set.score}}%</span></p>
+                <p class="text-light">score: <br><span class="ms-3 fs-2 text-warning">{{data.quiztaker_set.score}}%</span></p>
                 <progress-bar [progress]="data.quiztaker_set.score" [color-degraded]="{'35':'red','45':'aqua','60':'pink','80':'green'}">
                 </progress-bar>
 
@@ -103,6 +104,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     </div>
   </div>
 </div>
+
   
    
 

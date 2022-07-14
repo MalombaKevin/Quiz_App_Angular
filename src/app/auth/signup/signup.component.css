@@ -2,3 +2,15 @@
     background-color: #fd1df8;
     opacity: 0.4;
 }
+
+.cov{
+
+    background-image: url('../../../assets/images/qust.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #252c65;
+    background-blend-mode: hue;
+    height: 100vh;
+    padding-top: 10%;
+}

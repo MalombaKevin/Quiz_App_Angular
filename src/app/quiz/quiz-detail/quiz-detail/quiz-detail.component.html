@@ -5,22 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<app-navbar></app-navbar>
+<body>
+    
 
-<body style=" color:#252c65;; font-size: 21px; padding-top: 20px;background: rgba(52, 35, 148, 0.39);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.6px);
--webkit-backdrop-filter: blur(6.6px);
-border: 1px solid rgba(52, 35, 148, 0.29);">
+<app-navbar></app-navbar>
+<div class="bd">
+<div >
     <div class="container w-50" style="text-align: center; justify-content: center; width: 570px; height: 470px;">
-        <div class="question-wrapper" style="border: 5px solid white; ">
+        <div class="question-wrapper text-light " style="border: 5px solid white; margin-top: 20%;">
             <div *ngIf="quiz!=null" >
-                <div class="question-number">
+                <div class="question-number mt-2">
                     QUESTION  {{currentIndex + 1}} OF {{quiz.question_set.length}}
                 </div>
                 <div class="timer">
-                    <p [innerHTML]="timeplaceholder"></p>
+                    <p class="text-warning fs-3 my-2" [innerHTML]="timeplaceholder"></p>
                 </div>
                 <div>
                 <app-question [selectedAnswer]="answers[currentIndex]" [question]="quiz['question_set'][currentIndex]" (selectAnswer)="selectAnswer($event)" style="display: flex;"></app-question>
@@ -39,5 +37,7 @@ border: 1px solid rgba(52, 35, 148, 0.29);">
     
            
            
+    </div>
+</div>
 </body>
 </html>

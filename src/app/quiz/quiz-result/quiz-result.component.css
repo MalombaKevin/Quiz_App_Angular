@@ -1,0 +1,8 @@
+.los{
+    background-image: url('../../../assets/images/qust.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #252c65;
+    background-blend-mode: hue;
+}
