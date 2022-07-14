@@ -1,3 +1,9 @@
 ## Quiz App
+## Collaborators
+Norah Waswala
+Kelvin Malomba
+Beth Nduta
+Michael Ogaye
+Moureen Chepkoech
 ## Project Description
-Finding a quiz application that is related to a school course outline is difficult.This application ensure that Moringa school students find relevant quizzes that apply to topic modules and Independent Projects.
+An application that will ensure students in Moringa school have relevant questions that match with course outline and weekly Independent Projects.
