@@ -3,12 +3,12 @@
     opacity: 0.4;
 }
 .all{
-    background-image: url('../../../assets/images/qust.svg');
+    background-image: url('../../../assets/images/mak.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #252c65;
-    background-blend-mode: hue;  
+    background-color: hsl(233, 46%, 27%);
+    background-blend-mode: darken; 
     height: 100vh;
     padding-top: 10%;
 }
